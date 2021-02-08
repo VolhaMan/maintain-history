@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="10" author="Volha">
+        <sqlFile path="db/liquibase/sql/create_stock_table.sql" />
+    </changeSet>
+    <changeSet id="20" author="Volha">
+        <sqlFile path="db/liquibase/sql/create_stock_prices_table.sql"/>
+    </changeSet>
+    <changeSet id="30" author="Volha">
+        <sqlFile path="db/liquibase/sql/insert_into_stock.sql"/>
+    </changeSet>
+</databaseChangeLog>
